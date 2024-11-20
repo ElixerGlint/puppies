@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class PetShop {
     private Puppy[] puppies;
 
@@ -10,6 +12,18 @@ public class PetShop {
         }
     }
 
+    @Override
+    public String toString() {
+        String output = "";
+        for(Puppy p:puppies) {
+            if(p!=null) {
+                output+=p + "\n";
+            }
+        }
+        return output;
+    }
+
+    
 
 
 }
